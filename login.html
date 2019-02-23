@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="版权声明:本程序由杭州电子科技大学2016级管理学院唐涛开发,本人邮箱 : tangtaohdu@163.com;" />
+		<meta name="description" content="未经本人同意,严禁用于其他用途 . 	2019-1-25 00:47:56 " />
+		<meta name="description" content="Copyright statement: This program is developed by HDU 2016 School of Management Tang Tao, my e-mail is: tangtaohdu@163.com;" />
+		<meta name="description" content="Without my consent, is strictly prohibited for other purposes." />
+		<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+		<title>
+			TAO_DRIVER
+		</title>
+		<link rel="stylesheet" href="../../library/tangtao_20181021215747.css" />
+		<link rel="stylesheet" href="../../library/jquery-ui.css" />
+		<link rel="stylesheet" href="../../library/select/select.min.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+	</head>
+	<body style="background: #FFF;overflow-x: hidden;overflow-y: hidden;">
+		<div style="position:relative;padding: 0px;">
+			<div  class="container-fluid" style="position: absolute;width: 100%;overflow-x: hidden;padding: 0px;">
+				<img id='my_img' style="height: 100%;width: 100%;">
+			</div>
+			<div class="container-fluid" id='login_div' style="padding-bottom: 15px; opacity: 0.92; position: absolute;background: #fff;box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.4);border: 0px solid #333333;border-radius: 5px;">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 lines" >
+						<img src="../image/cloud_1.png" style="height: 100%;" />
+						<span style="color: #5cb85c;">&nbsp;&nbsp;TAOCLOUD</span>
+					</div>
+					<div class="col-xs-10 col-xs-offset-1 lines" style="">
+						<strong>登录</strong>
+					</div>
+					<div class="col-xs-10 col-xs-offset-1" id="my_verify_image_body" style="display: none;margin-bottom: 5px;margin-top: 5px;">
+						<img id='my_verify_image' style="border-radius: 3px;">
+					</div>
+					<div class="col-xs-10 col-xs-offset-1 lines" >
+						<div class="form-group has-success has-feedback"id='my_input' >
+						  <input type="text" class="form-control" id="inputSuccess5"  aria-describedby="inputSuccess5Status" />
+						  <span class="glyphicon glyphicon-ok form-control-feedback" id='my_ico'  aria-hidden="false"  ></span>
+						</div>
+					</div>
+					<div class="col-xs-10 col-xs-offset-1 lines">
+						<address>
+						  没有账号,<a href="javascript:void(0);">创建账号</a>
+						  &nbsp;<span style="color: #d9534f;" id='error_info'></span>
+						</address>
+						<address style="display: none;">
+							看不清,<a href="javascript:void(0);" id='update_code'>换一张</a>
+							&nbsp;<span style="color: #d9534f;" id='error_info0'></span>
+						</address>
+					</div>
+					<div class="col-xs-10 col-xs-offset-1 lines">
+						<address>
+						  忘记账号,<a href="javascript:void(0);">找回账号</a>
+						</address>
+						<address style="display: none;">
+						  忘记密码,<a href="javascript:void(0);">找回密码</a>
+						  &nbsp;<span style="color: #d9534f;" id='error_info1'></span>
+						</address>
+					</div>
+					
+					<div class="col-xs-10 col-xs-offset-1 lines" style="text-align: right;">
+						<button type="button" class="btn btn-success" id='my_next_btn'>下一步</button>
+					</div>
+					
+					<div class="col-xs-10 col-xs-offset-1 lines">
+						<div class="progress my_progress_0" style="display: none;">
+						  <div  id='my_progress'  style="min-width: 0em; width: 20%;background:#5cb85c ;">
+						  </div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			<!-- 底部置位 -->
+			<div class="col-xs-6 col-xs-offset-6" style="position: fixed;color: #fff;bottom: 10px;text-align: right;font-size: 12px;">
+				© TangTao 2019
+			</div><!-- 底部置位 -->
+			
+		</div>
+		
+	</body>
+	
+</html>
+
+<script src="../../library/jquery-3.1.1.min.js"></script>
+<script src="../../library/jquery-ui.js"></script>
+<!-- <script src="../../library/select/select.min.js"></script> -->
+<script src="../../library/tangtao_2018102102814.min.js"></script>
+<script src="../../library/common.tangtao.js"></script>
+
+<!-- md5 -->
+<script src="../../library/md5/md5.min.js"></script>
+
+<script src="../../library/sha1/sha1.min.js"></script>
+<script src="../../library/base64/base64.js"></script>
+
+<!-- 引入上传模块 -->
+<script src="../../library/plupload/plupload.full.min.js"></script>
+<script src="../js/js/jsencrypt.min.js"></script>
+<!-- 引入主控制界面 -->
+<script src="../js/js/login.js"></script>
+
+
